@@ -1,0 +1,29 @@
+<div class="background">
+<div class="plus-ex-container flex-space-around main-layout" >
+   
+    <div class="exerciseplus" [ngClass]="{'correct' : exercise.isCorrect, 'mistake' :exercise.isMistake}" *ngIf="questCounter <11; else res"  >
+        <div class="quest-counter">{{questCounter}} שאלה מספר</div>
+    <form (submit)="getSolution()" >
+        <div class="flex">
+ <div class="num1">{{exercise.num1}} </div>  ➕ <div class="num2"> {{exercise.num2}} </div> <p class="equal-sign">=</p> 
+    <input type="number" name="res" [(ngModel)]="exercise.answer" placeholder="" [ngClass]="{'shake':exercise.isMistake} ">
+</div>
+    <button class="check-btn">בדיקה</button>
+</form> 
+<div *ngIf="mistakeCounter===2" class="msg-wrong-ans">{{showSolution}} {{exercise.solution}}</div> 
+<div *ngIf="exercise.isMistake&&mistakeCounter===1" class="msg-wrong-ans">{{msgWrongAns}}</div>
+</div>
+<ng-template #res>  
+   
+<div  class="user-res">
+    <div class="your-res">התוצאה שלך היא</div>
+    <p class="user-score">{{user.score}}/10</p>
+<div class="smiley">{{smiley}}</div>
+<div><button class="playagain-btn">שחק/י שוב</button></div>
+<div><button class="gohomepage-btn">דף הבית</button></div>
+</div>
+</ng-template>
+<app-animation [exercise]="exercise" [user]="user"></app-animation>
+</div>
+</div>
+

@@ -1,0 +1,11 @@
+<div class="dark" [ngClass]="darkOut"  ></div>
+<div class="sign-up" [ngClass]="flyOut" >
+    <h2>שלום אורח/ת</h2> 
+
+<form  (submit)="signup()">
+ <input type="text" name="name" id="name"  [(ngModel)]="user.name" placeholder="                         ..שם בבקשה">
+ <div >
+ <button class="signup-btn"  >התחבר/י</button>
+</div>
+ </form>
+</div>

@@ -1,0 +1,25 @@
+.background{
+    background-image: url('https://www.wallpaperkiss.com/wimg/b/131-1314763_big.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;  
+    min-height: 100vh;
+  }
+.homepage-container{
+    flex-wrap: wrap;
+}
+
+.main-container{
+    padding-top: 40px; 
+}
+
+img{
+    height: 250px;
+    width: 310px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    &:hover{
+        opacity: 0.9;
+    }
+}

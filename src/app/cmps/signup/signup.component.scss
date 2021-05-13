@@ -1,0 +1,49 @@
+.sign-up{
+        width: 200px;
+        height: 200px;
+        padding-top: 10px;
+    position: relative;
+        text-align: center;
+     margin: 0 auto;
+     background-color: yellowgreen;
+     border-radius: 25px;
+     animation: sign-up 2s;
+     animation-fill-mode: backwards;
+     color: blue;
+     margin-bottom: 30px;
+     z-index: 1;
+    }
+    @keyframes sign-up {
+        0% {top: -500px;}
+        25% {top: 100px;}
+        50% {top: -50px;}
+        75% {top: 50px}
+        100% {top: 0}
+      }
+
+      .fly-out{
+        display: none;
+      }
+
+      input{
+        text-align: right;
+          padding:5px;
+          margin: 10px
+      }
+      .signup-btn{
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        margin-top: 10px;
+        background-color: blue;
+        border: 3px solid yellow;
+        color: yellow;
+        font-size: 15px;
+      &:hover{
+          color: blue;
+          background-color:yellow;
+      }
+    
+    }
+      
+      

@@ -1,0 +1,5 @@
+<div class="animation-container">
+    <img src="assets/icons/sun.jpg" alt="not loading sun" class="sun-img" [ngClass]="{'sun-shake': exercise.isCorrect}">
+    <img class="road-img" src="https://thumbs.dreamstime.com/b/vector-landscape-background-road-green-fir-tree-valley-hill-hills-clouds-flat-design-70899853.jpg" alt="not loading">
+    <img class="img"  [src]="data[user.score+1]" alt="" srcset="" [ngStyle]="(exercise.isCorrect)? {'margin-top': '140px', 'width':'80px', 'height':'120px'}: {}">
+</div>
