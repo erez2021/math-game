@@ -40,6 +40,20 @@ public getComplexExercise(){
   return this.exercise
 }
 
+public getKidsExercise() {
+  this.exercise = {
+    _id :  this._makeId(),
+    num1: 0,
+    num2: 0,
+    num3: 0,
+    solution: 0,
+    answer: null,
+   isCorrect: false,
+   isMistake: false
+  }
+  return this.exercise
+}
+
 private _makeId() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);

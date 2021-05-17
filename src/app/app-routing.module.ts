@@ -9,6 +9,7 @@ import { ComplexExComponent } from './cmps/complex-ex/complex-ex.component';
 import { BalloonsComponent} from '../app/cmps/balloons/balloons.component'
 import { WelcomeComponent} from '../app/cmps/welcome/welcome.component'
 import { KidsComponent} from '../app/cmps/kids/kids.component'
+import { CountComponent} from '../app/cmps/count/count.component'
 const routes: Routes = [
   { path: 'animation', component: AnimationComponent},
   { path: 'complex-ex', component: ComplexExComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'plus-ex', component: PlusExComponent},
   { path: 'balloons', component: BalloonsComponent},
   { path: 'kids', component: KidsComponent},
+  { path: 'count', component: CountComponent},
   { path: 'home', component: HomePageComponent },
   { path: '', component: WelcomeComponent },
 ];

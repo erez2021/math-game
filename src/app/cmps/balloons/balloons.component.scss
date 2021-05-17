@@ -340,7 +340,7 @@ body {
   height: 8px;
   border-radius: 50%;
   box-shadow: $box-shadow2;
-  @include animation((2s bang ease-out backwards, 2s gravity ease-in backwards, 7s position linear backwards));
+  @include animation((7s bang ease-out backwards, 7s gravity ease-in backwards, 8s position linear backwards));
 }
     
 .pyro > .after {
@@ -394,13 +394,13 @@ position: relative;
 margin: 0 auto;
 background-color: yellowgreen;
 border-radius: 25px;
-animation: sign-up 2s;
+animation: play 2s;
 animation-fill-mode: backwards;
 color: blue;
 margin-bottom: 30px;
 z-index: 1;
 }
-@keyframes sign-up {
+@keyframes play {
   0% {top: -500px;}
   25% {top: 100px;}
   50% {top: -50px;}

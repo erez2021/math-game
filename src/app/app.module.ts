@@ -15,6 +15,7 @@ import { ComplexExComponent } from './cmps/complex-ex/complex-ex.component';
 import { BalloonsComponent } from './cmps/balloons/balloons.component';
 import { WelcomeComponent } from './cmps/welcome/welcome.component';
 import { KidsComponent } from './cmps/kids/kids.component';
+import { CountComponent } from './cmps/count/count.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { KidsComponent } from './cmps/kids/kids.component';
     ComplexExComponent,
     BalloonsComponent,
     WelcomeComponent,
-    KidsComponent
+    KidsComponent,
+    CountComponent
   ],
   imports: [
     BrowserModule,
