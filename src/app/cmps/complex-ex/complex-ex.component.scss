@@ -20,9 +20,17 @@
    
 }
 
+.quest-counter{
+  animation: appear 2s
+}
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 .exercise{
     width: 450px;
-    height: 500px;
+    height: 550px;
 position: relative;
     text-align: center;
  margin: 0 auto;
@@ -51,7 +59,7 @@ input{
    margin: 7px;
 }
 form {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .shake{

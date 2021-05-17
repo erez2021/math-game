@@ -1,4 +1,4 @@
-<div class="dark" [ngClass]="darkOut"  ></div>
+<div class="dark" [ngClass]="darkOut" ></div>
 <div class="sign-up" [ngClass]="flyOut" >
     <h2>שלום אורח/ת</h2> 
 
@@ -6,6 +6,9 @@
  <input type="text" name="name" id="name"  [(ngModel)]="user.name" placeholder="                         ..שם בבקשה">
  <div >
  <button class="signup-btn"  >התחבר/י</button>
+ <div>
+ <button class="home-btn" [routerLink]="['home']" >לדף הבית</button>
+</div>
 </div>
  </form>
 </div>

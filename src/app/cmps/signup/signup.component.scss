@@ -1,7 +1,7 @@
 .sign-up{
-        width: 200px;
-        height: 200px;
-        padding-top: 10px;
+        width: 250px;
+        height: 300px;
+        padding-top: 20px;
     position: relative;
         text-align: center;
      margin: 0 auto;
@@ -10,7 +10,7 @@
      animation: sign-up 2s;
      animation-fill-mode: backwards;
      color: blue;
-     margin-bottom: 30px;
+   
      z-index: 1;
     }
     @keyframes sign-up {
@@ -42,6 +42,24 @@
       &:hover{
           color: blue;
           background-color:yellow;
+      }
+    
+    }
+      .home-btn{
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        margin-top: 10px;
+        color: blue;
+        background-color:yellow;
+      
+        border: 3px solid blue;
+      
+        font-size: 15px;
+      &:hover{
+        background-color: blue;
+  
+        color: yellow;
       }
     
     }

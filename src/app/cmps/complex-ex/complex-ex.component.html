@@ -3,6 +3,16 @@
    
     <div class="exercise" [ngClass]="{'correct' : exercise.isCorrect, 'mistake' :exercise.isMistake}" *ngIf="questCounter <11; else res"  >
         <div class="quest-counter">{{questCounter}} שאלה מספר</div>
+        <div class="example" *ngIf="questCounter===1">
+         <p>  :עליך למצוא את השארית. לדוגמא</p>   
+         <p> 4 X 5 % 3 = 2</p> 
+         <p> 4 X 5 = 20 כי</p>  
+        
+         <p> 20 % 3 = 6</p> 
+           <p>ושארית החלוקה היא 2</p>  
+      
+        </div> 
+
     <form (submit)="getSolution()" >
         <div class="flex">
  <div class="num1">{{exercise.num1}} </div> X <div class="num2"> {{exercise.num2}} </div> % <div class="num3"> {{exercise.num3}} </div>

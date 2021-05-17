@@ -12,6 +12,9 @@ import { MinusExComponent } from './cmps/minus-ex/minus-ex.component';
 import { MultipleComponent } from './cmps/multiple/multiple.component';
 import { FooterComponent } from './cmps/footer/footer.component';
 import { ComplexExComponent } from './cmps/complex-ex/complex-ex.component';
+import { BalloonsComponent } from './cmps/balloons/balloons.component';
+import { WelcomeComponent } from './cmps/welcome/welcome.component';
+import { KidsComponent } from './cmps/kids/kids.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ComplexExComponent } from './cmps/complex-ex/complex-ex.component';
     MinusExComponent,
     MultipleComponent,
     FooterComponent,
-    ComplexExComponent
+    ComplexExComponent,
+    BalloonsComponent,
+    WelcomeComponent,
+    KidsComponent
   ],
   imports: [
     BrowserModule,

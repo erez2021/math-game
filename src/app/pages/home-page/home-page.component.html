@@ -1,15 +1,28 @@
 <div class="background">
     <div class="main-container"></div>
-<app-signup ></app-signup>
+   
+
 
 <div class="homepage-container flex-space-evenly main-layout" >
-  
-    <img src="assets/icons/minus.jpg" alt="תמונה" [routerLink]="['minus-ex']">
- 
-    <img src="assets/icons/plus.jpg" alt="תמונה" [routerLink]="['plus-ex']">
-
-    <img src="assets/icons/multiple.png" alt="תמונה" [routerLink]="['multiple']">
-
-    <img src="assets/icons/complex.jpg" alt="תמונה" [routerLink]="['complex-ex']">
+  <div class="card" [routerLink]="['/minus-ex']">
+    <img src="assets/icons/minus.jpg" alt="תמונה" >
+    <div class="label minus"><h1>חיסור</h1></div>
+</div>
+ <div class="card" [routerLink]="['/plus-ex']">
+    <img src="assets/icons/plus.jpg" alt="תמונה" >
+    <div class="label plus"><h1>חיבור</h1></div>
+</div>
+ <div class="card" [routerLink]="['/multiple']">
+    <img src="assets/icons/multiple.png" alt="תמונה" >
+    <div class="label multiple"><h1>כפל</h1></div>
+</div>
+ <div class="card"  [routerLink]="['/complex-ex']">
+    <img src="assets/icons/complex.jpg" alt="תמונה">
+    <div class="label complex"><h1>מתקדמים</h1></div>
+</div>
+ <div class="card"  [routerLink]="['/kids']">
+    <img src="assets/icons/numbers1.jpg" alt="תמונה">
+    <div class="label complex"><h1>גיל רך</h1></div>
+</div>
 </div>
 </div>

@@ -7,6 +7,7 @@
   }
 .homepage-container{
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .main-container{
@@ -17,9 +18,40 @@ img{
     height: 250px;
     width: 310px;
     border-radius: 30px;
-    cursor: pointer;
+    
     margin-bottom: 40px;
+   
+}
+
+.card{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
     &:hover{
         opacity: 0.9;
     }
+}
+
+.label{
+    position: absolute;
+    width: 310px;
+    height: 70px;
+    top: 70px;
+    opacity: 0.8;
+}
+
+.multiple{
+    background-color: rgb(179, 250, 109);
+}
+
+.plus, .minus{
+    background-color: darkcyan;
+}
+
+.complex{
+    background-color: deepskyblue;
+}
+
+h1{
+    color: blue;
 }

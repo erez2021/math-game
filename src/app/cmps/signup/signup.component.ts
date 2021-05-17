@@ -10,10 +10,10 @@ import { Output, EventEmitter } from '@angular/core';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
- 
+
   public user: User
   public isDark: boolean=true
-  @Output() newItemEvent =new EventEmitter<boolean>()
+
   constructor(private userService: UserService ,private router: Router) { }
 
   ngOnInit(): void {
@@ -23,7 +23,7 @@ export class SignupComponent implements OnInit {
     console.log(this.user);
     this.isDark = false
     this.userService.saveToStorage(this.user)
-   
+      this.router.navigateByUrl("home")
     }
     get darkOut() {
       return {'light': !this.isDark}
