@@ -16,6 +16,8 @@ import { BalloonsComponent } from './cmps/balloons/balloons.component';
 import { WelcomeComponent } from './cmps/welcome/welcome.component';
 import { KidsComponent } from './cmps/kids/kids.component';
 import { CountComponent } from './cmps/count/count.component';
+import { AudioComponent } from './cmps/audio/audio.component';
+import { AboutComponent } from './cmps/about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { CountComponent } from './cmps/count/count.component';
     BalloonsComponent,
     WelcomeComponent,
     KidsComponent,
-    CountComponent
+    CountComponent,
+    AudioComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -5,14 +5,17 @@
        <img *ngFor="let randImg of randImgs; index as idx" src="{{randImg.img}}" alt="tree-img" class="tree-img">
     </div>
 
-    <div class="tv-img">
-    <img src="assets/icons/tv.webp" alt="tv-img" >
+    <div >
+    <img src="assets/icons/remote.png" alt="tv-img" class="remote-img">
 </div>
+
+<div class="form">
 <form (submit)="getSolution()" >
 <input type="number" name="res" [(ngModel)]="exercise.answer" placeholder="">
 <button class="check-btn">בדיקה</button>
 </form> 
-
+</div>
+<button class="voice-btn" (click)="playVoice()">🔊</button>
 </div>
 <ng-template #fireworks>  
     <div class="pyro" >
@@ -22,7 +25,7 @@
           <div>!כל הכבוד</div>
           <div>😀</div>
           <div >
-            <button class="playagain-btn"  > שחק/י שוב</button>
+            <button class="playagain-btn"  (click)="playAgain()"> שחק/י שוב</button>
            </div>
         </div>
       </div>

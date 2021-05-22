@@ -1,7 +1,11 @@
 
 .container{
   height: 100vh;
-    background-color: rgb(42, 163, 238);
+    // background-color: rgb(42, 163, 238);
+    background-image: url('../../../assets//icons/clouds.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
 
@@ -231,13 +235,13 @@ h1 {
 }
 
 @keyframes float {
-    from {transform: translateY(100vh);
+    from {transform: translateY(80vh);
     opacity: 1;}
-    to {transform: translateY(-50vh);
+    to {transform: translateY(0vh);
     opacity: 0;}
   }
 @keyframes float-easy {
-    0% {transform: translateY(100vh);
+    0% {transform: translateY(80vh);
     opacity: 1;}
     50% {transform: translateY(50vh);
     opacity: 0.8;}
@@ -247,15 +251,15 @@ h1 {
     opacity: 0.5;}
   }
 @keyframes float-around {
-    0% {transform: translateY(100vh);
+    0% {transform: translateY(80vh);
     opacity: 1;}
-    25% {transform: translateY(80vh);
+    25% {transform: translateY(60vh);
     opacity: 0.8;}
     50% {transform: translateX(-5vw);
     opacity: 0.7;}
     75% {transform: translateX(40vh);
     opacity: 0.6;}
-    100% {transform: translateY(-10vh);
+    100% {transform: translateY(0vh);
     opacity: 0.3;}
   }
 
@@ -334,6 +338,7 @@ body {
   overflow: hidden;
 }
 
+
 .pyro > .before, .pyro > .after {
   position: absolute;
   width: 8px;
@@ -387,7 +392,7 @@ body {
 .pop-up{
   width: 200px;
   height: 200px;
-  padding-top: 20px;
+  padding-top: 30px;
 position: relative;
   text-align: center;
   font-size: 24px;
@@ -398,6 +403,7 @@ animation: play 2s;
 animation-fill-mode: backwards;
 color: blue;
 margin-bottom: 30px;
+margin-top: 130px;
 z-index: 1;
 }
 @keyframes play {
@@ -407,7 +413,7 @@ z-index: 1;
   75% {top: 50px}
   100% {top: 0}
 }
-.playagain-btn{
+.playagain-btn, .play-btn{
   height: 65px;
   width: 65px;
   border-radius: 50%;
@@ -419,6 +425,51 @@ z-index: 1;
 &:hover{
     color: blue;
     background-color:yellow;
+    border: 3px solid blue;
 }
 
+}
+
+.voice-btn{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  background-color: red;
+  border: 3px solid yellow;
+  color: yellow;
+  font-size: 22px;
+
+  z-index: 2;
+  top: 390px;
+  left: 625px;
+&:hover{
+    color: red;
+    background-color:yellow;
+    border: 3px solid red;
+}
+}
+.directions{
+  width: 200px;
+  height: 200px;
+  padding-top: 30px;
+position: relative;
+  text-align: center;
+  font-size: 24px;
+margin: 0 auto;
+background-color: yellowgreen;
+border-radius: 25px;
+animation: play 2s;
+animation-fill-mode: backwards;
+color: blue;
+margin-bottom: 30px;
+z-index: 1;
+top: 100px;
+}
+@keyframes play {
+  0% {top: -500px;}
+  25% {top: 100px;}
+  50% {top: -50px;}
+  75% {top: 50px}
+  100% {top: 100px}
 }

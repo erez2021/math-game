@@ -1,7 +1,10 @@
-<link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
 
 <div class="container">
-  <div class="balloon main-layout">
+  <div class="directions" *ngIf="isShown">
+    <div><button class="voice-btn" (click)="playVoice()">🔊</button></div>
+    <button class="play-btn" (click)="play()">שחק/י</button>
+  </div>
+  <div class="balloon main-layout" *ngIf="isPlaying">
         <div (click)="explodeBalloon(4)" [ngStyle]="(data[4].isClicked)? {'display': 'none'} : {}"><span>4</span></div>
     <div (click)="explodeBalloon(2)" [ngStyle]="(data[2].isClicked)? {'display': 'none'} : {}"><span>2</span></div>
     <div (click)="explodeBalloon(7)" [ngStyle]="(data[7].isClicked)? {'display': 'none'} : {}"><span>7</span></div>
@@ -20,7 +23,7 @@
       <div>!כל הכבוד</div>
       <div>😀</div>
       <div >
-        <button class="playagain-btn"  > שחק/י שוב</button>
+        <button class="playagain-btn" (click)="playAgain()" > שחק/י שוב</button>
        </div>
     </div>
   </div>

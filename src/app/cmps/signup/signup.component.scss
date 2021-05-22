@@ -42,6 +42,7 @@
       &:hover{
           color: blue;
           background-color:yellow;
+          border: 3px solid blue;
       }
     
     }
@@ -58,7 +59,7 @@
         font-size: 15px;
       &:hover{
         background-color: blue;
-  
+        border: 3px solid blue;
         color: yellow;
       }
     

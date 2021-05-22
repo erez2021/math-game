@@ -7,11 +7,25 @@
   }
 .homepage-container{
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .main-container{
     padding-top: 40px; 
+}
+
+.username{
+    width: 350px;
+    margin: 0 auto;
+    font-size: 36px;
+    color: white;
+    height: 100px;
+    background-image: url('https://images.pond5.com/random-numbers-technology-code-animation-footage-074764995_iconm.jpeg');
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 30px;
 }
 
 img{

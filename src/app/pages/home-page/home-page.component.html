@@ -3,6 +3,7 @@
    
 
 
+    <div class="username main-layout" *ngIf="user.name">{{user.name}} שלום</div>
 <div class="homepage-container flex-space-evenly main-layout" >
   <div class="card" [routerLink]="['/minus-ex']">
     <img src="assets/icons/minus.jpg" alt="תמונה" >

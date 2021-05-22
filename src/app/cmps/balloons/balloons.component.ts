@@ -24,6 +24,8 @@ export class BalloonsComponent implements OnInit {
     { isClicked: false },
 
   ]
+  isPlaying: boolean = false
+  isShown: boolean = true
   constructor() { }
 
   ngOnInit(): void {
@@ -44,4 +46,18 @@ export class BalloonsComponent implements OnInit {
 
     }
   }
-}
+  play() {
+    this.isPlaying = true
+    this.isShown = false
+  }
+  playVoice(){
+    var audio = new Audio('assets/sounds/balloons.wav');
+    audio.play() 
+  }  
+  playAgain(){
+    window.location.reload()
+ 
+  }
+    }
+  
+

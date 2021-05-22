@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
 import {User} from '../../models/user'
 
 @Component({
@@ -6,10 +6,14 @@ import {User} from '../../models/user'
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
-export class HomePageComponent  {
+export class HomePageComponent implements OnInit {
 
   constructor() { }
 user:User
+
+ngOnInit(): void {
+ this.user = JSON.parse(localStorage.getItem('user'))
+}
 
 }
 

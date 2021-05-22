@@ -46,7 +46,7 @@ this.dataCopy = this.data.slice(0)
     setTimeout(()=> {
       this.dataCopy = this.data.slice(0)
       this.randImgs= this.dataCopy.splice(this.numberService.getRandomInt(0,9))
-     this.exercise = this.numberService.getKidsExercise()
+      this.exercise = this.numberService.getKidsExercise()
      this.exercise.solution = this.randImgs.length
     },1000)
   }
@@ -55,5 +55,12 @@ this.dataCopy = this.data.slice(0)
       audio.play() 
     return
   }
+}
+playVoice(){
+  var audio = new Audio('assets/sounds/trees.wav');
+  audio.play() 
+}
+playAgain(){
+  window.location.reload()
 }
 }
