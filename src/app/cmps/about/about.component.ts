@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  i: string = ''
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+
+      this.i = 'bla'
+    },3000);
   }
 
 }
+

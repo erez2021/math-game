@@ -1,11 +1,17 @@
+.typewriter{
+  height: 400px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-  
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow:hidden;
+    white-space: nowrap; 
+    // margin: 0 auto;
+    letter-spacing: .1em; 
+   
     animation: 
-      typing 5.5s steps(40, end),
+      typing 5.5s steps(10, end),
      
   }
   
