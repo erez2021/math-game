@@ -279,25 +279,29 @@ body {
     width: 200px;
     height: 200px;
     padding-top: 20px;
-  position: relative;
+    position: absolute;
+    left: 40%;
+    right: 50%;
+  top: 300px;
     text-align: center;
     font-size: 24px;
-  margin: 0 auto;
   background-color: yellowgreen;
   border-radius: 25px;
-  animation: play 2s;
-  animation-fill-mode: backwards;
   color: blue;
-
   z-index: 1;
-  }
-  @keyframes play {
-    0% {top: -500px;}
-    25% {top: 100px;}
-    50% {top: -50px;}
-    75% {top: 50px}
-    100% {top: 0}
-  }
+  animation: show 2s;
+  transform: scale(1);
+}
+
+@keyframes show {
+   from{
+       opacity: 0;
+       transform: scale(0);
+   } to {
+       opacity: 1;
+       transform: scale(1);
+   }
+}
   .playagain-btn{
     height: 65px;
     width: 65px;
@@ -314,3 +318,28 @@ body {
   }
   
   }
+
+  
+.shake{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+transform: translate3d(0, 0, 0);
+backface-visibility: hidden;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

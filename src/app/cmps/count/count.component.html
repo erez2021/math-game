@@ -11,7 +11,7 @@
 
 <div class="form">
 <form (submit)="getSolution()" >
-<input type="number" name="res" [(ngModel)]="exercise.answer" placeholder="">
+<input type="number" name="res" [(ngModel)]="exercise.answer" placeholder="" [ngClass]="{'shake':exercise.isMistake} ">
 <button class="check-btn">בדיקה</button>
 </form> 
 </div>

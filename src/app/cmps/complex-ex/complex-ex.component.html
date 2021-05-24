@@ -31,7 +31,7 @@
     <p class="user-score">{{user.score}}/10</p>
 <div class="smiley">{{smiley}}</div>
 <div><button class="playagain-btn" (click)="playAgain()">שחק/י שוב</button></div>
-<div><button class="gohomepage-btn">דף הבית</button></div>
+<div><button class="gohomepage-btn" [routerLink]="['/home']">דף הבית</button></div>
 </div>
 </ng-template>
 </div>

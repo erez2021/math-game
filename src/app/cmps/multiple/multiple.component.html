@@ -2,7 +2,13 @@
 <div class="multiple-ex-container flex-space-around main-layout" >
    
     <div class="exerciseplus" [ngClass]="{'correct' : exercise.isCorrect, 'mistake' :exercise.isMistake}" *ngIf="questCounter <11; else res"  >
-        <div class="quest-counter">{{questCounter}} שאלה מספר</div>
+        <div class="quest-counter">
+            <div class="dialog">
+                {{questCounter}} שאלה מספר
+                <div class="right-point"></div>
+            </div>
+            <img src="assets/icons/aquarium.webp" alt="img" class="aquariom-img">
+           </div>
     <form (submit)="getSolution()" >
         <div class="flex">
  <div class="num1">{{exercise.num1}} </div>  X <div class="num2"> {{exercise.num2}} </div> <p class="equal-sign">=</p> 
@@ -19,8 +25,8 @@
     <div class="your-res">התוצאה שלך היא</div>
     <p class="user-score">{{user.score}}/10</p>
 <div class="smiley">{{smiley}}</div>
-<div><button class="playagain-btn">שחק/י שוב</button></div>
-<div><button class="gohomepage-btn">דף הבית</button></div>
+<div><button class="playagain-btn" (click)="playAgain()">שחק/י שוב</button></div>
+<div><button class="gohomepage-btn" [routerLink]="['/home']">דף הבית</button></div>
 </div>
 </ng-template>
 <app-animation [exercise]="exercise" [user]="user"></app-animation>

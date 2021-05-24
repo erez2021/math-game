@@ -51,7 +51,7 @@ input{
    margin: 7px;
 }
 form {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .shake{
@@ -120,6 +120,12 @@ form {
     margin-top: 50px;
     color: blue;
 }
+.aquariom-img{
+  position: relative;
+  height: 150;
+    width: 300px;
+    margin: 0 auto;
+}
  .user-res{
     width: 300px;
     height: 400px;
@@ -166,4 +172,28 @@ form {
       background-color:yellow;
   }
 
+}
+
+
+.dialog{
+  height: 40px;
+  width: 160px;
+  background-color: whitesmoke;
+  position: absolute;
+  border-radius: 10%;
+  right: 140px;
+  top: 75px;
+  z-index: 1;
+}
+
+.right-point{
+width: 0;
+height: 0;
+border-left: 1vh solid transparent;
+border-right: 1vh solid transparent;
+border-top: 5vh solid whitesmoke;
+position: absolute;
+top: 45%;
+right: -10%;
+transform: rotate(-60deg);
 }
