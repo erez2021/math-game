@@ -1,6 +1,10 @@
 <div class="background">
-<div class="minus-ex-container flex-space-around main-layout" >
-   
+<div class="minus-ex-container main-layout" >
+    <div class="timer">
+        <button (click)="startTime()" class="time-btn" *ngIf="!isClock">הפעל/י שעון</button>
+       <div class="clock" *ngIf="isClock">{{min}}:<span *ngIf="sec<10">0</span>{{sec}}</div>
+    </div>
+       <div class="flex-space-around main-layout">
     <div class="exercise" [ngClass]="{'correct' : exercise.isCorrect, 'mistake' :exercise.isMistake}" *ngIf="questCounter <11; else res"  >
         <div class="quest-counter">
             <div class="dialog">
@@ -24,12 +28,14 @@
 <div  class="user-res">
     <div class="your-res">התוצאה שלך היא</div>
     <p class="user-score">{{user.score}}/10</p>
+
 <div class="smiley">{{smiley}}</div>
 <div><button class="playagain-btn" (click)="playAgain()">שחק/י שוב</button></div>
 <div><button class="gohomepage-btn" [routerLink]="['/home']">דף הבית</button></div>
 </div>
 </ng-template>
 <app-animation [exercise]="exercise" [user]="user"></app-animation>
+</div>
 </div>
 </div>
 

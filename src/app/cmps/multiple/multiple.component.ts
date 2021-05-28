@@ -19,7 +19,10 @@ export class MultipleComponent implements OnInit {
   public showSolution:string =  'הפתרון הוא'
   public questCounter: number = 1
   public mistakeCounter: number = 0
-  
+  public sec: number = 0
+public min: number = 0
+public isClock: boolean = false
+private interval 
   
   
     ngOnInit(): void {
@@ -73,8 +76,19 @@ export class MultipleComponent implements OnInit {
      
       var audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/intromusic.ogg');
         audio.play() 
+        clearInterval(this.interval)
       return
     }
+    }
+    startTime(){
+      this.isClock = true
+      this.interval = setInterval(() =>{
+        this.sec++
+        if (this.sec ===60){
+          this.sec = 0
+          this.min++
+        }
+      },1000)
     }
     playAgain(){
       window.location.reload()

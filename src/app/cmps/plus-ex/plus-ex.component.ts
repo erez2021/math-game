@@ -18,6 +18,11 @@ public showMsg: string =  'עוד ניסיון אחד'
 public showSolution:string =  'הפתרון הוא'
 public questCounter: number = 1
 public mistakeCounter: number = 0
+public sec: number = 0
+public min: number = 0
+public isClock: boolean = false
+private interval 
+
 
 
 
@@ -68,10 +73,21 @@ public mistakeCounter: number = 0
     }
   console.log(this.questCounter);
   if (this.questCounter > 10) {
-    var audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/intromusic.ogg');
+    var audio = new Audio('assets/sounds/success2.mp3');
       audio.play() 
+       clearInterval(this.interval)
     return
   }
+  }
+  startTime(){
+    this.isClock = true
+    this.interval = setInterval(() =>{
+      this.sec++
+      if (this.sec ===60){
+        this.sec = 0
+        this.min++
+      }
+    },1000)
   }
   playAgain(){
     window.location.reload()

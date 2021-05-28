@@ -19,6 +19,35 @@
     }
    
 }
+.timer{
+  width: 130px;
+ margin: 0 auto;
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.time-btn{
+width: 130px;
+height: 50px;
+border-radius: 20px;
+background-color: blue;
+border: 3px solid yellow;
+color: yellow;
+font-size: 20px;
+&:hover{
+ color: blue;
+ background-color:yellow;
+ border: 3px solid blue;
+}
+}
+.clock{
+width: 130px;
+height: 50px;
+line-height: 50px;
+border-radius: 20px;
+background-image:  linear-gradient(90deg, rgb(144, 230, 243),rgb(10, 220, 190));
+font-size: 24px;
+}
 
 .quest-counter{
   animation: appear 2s
@@ -129,8 +158,8 @@ form {
     color: blue;
 }
  .user-res{
-    width: 300px;
-    height: 400px;
+  width: 380px;
+  height: 500px;
     border: 1px solid black;
     text-align: center;
  margin: 0 auto;

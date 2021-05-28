@@ -4,6 +4,7 @@
     width: 100%;
     background-image: linear-gradient(90deg, rgb(144, 230, 243),rgb(10, 220, 190));
     margin-top: -10px;
+  
 // align-content: center;
 
 }
@@ -41,4 +42,7 @@ h2{
 
 .about{
     background-color: rgb(212, 212, 38)
+}
+.active{
+    border-bottom:2px solid black;
 }
